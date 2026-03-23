@@ -1,0 +1,19 @@
+packages:
+  "date-fns": "For formatting dates and times"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For Zod schema validation with react-hook-form"
+  "zod": "For form schema validation"
+  "clsx": "For conditional class name joining"
+  "tailwind-merge": "For merging tailwind classes safely"
+  "lucide-react": "For UI icons"
+
+images:
+  - path: "artifacts/ministry-flow/public/images/auth-bg.png"
+    description: "Abstract, subtle, formal geometric pattern in deep navy blue, resembling a subtle watermark or guilloche pattern found on official documents, dark and professional"
+    aspect_ratio: "16:9"
+  - path: "artifacts/ministry-flow/public/images/logo-seal.png"
+    description: "A minimal, modern flat vector logo of a formal government seal or crest in solid gold color on transparent background"
+    aspect_ratio: "1:1"
+
+notes:
+  - The frontend will monkey-patch window.fetch in App.tsx to automatically inject the JWT token from localStorage into all requests, ensuring generated API hooks work seamlessly without needing to modify the generated customFetch.ts.
